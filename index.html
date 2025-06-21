@@ -3,126 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lost Souls - FiveM Survival</title>
+    <title>Lost Souls RP</title>
     <style>
         body {
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(to bottom, #1a0f0a, #5c3926);
-            color: #fff;
-            text-align: center;
-            padding: 2rem;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0d0d0d;
+            color: white;
+        }
+        header {
+            background-color: #1a0f0a;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
         header img {
-            width: 180px;
+            height: 50px;
             border-radius: 50%;
-            margin-bottom: 1rem;
         }
-        h1 {
+        nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+        nav a {
+            color: #f2a15a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            padding: 2rem;
+            text-align: center;
+        }
+        .hero h1 {
             color: #C2542A;
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            font-size: 2.5rem;
         }
-        p {
+        .hero p {
             max-width: 800px;
             margin: 1rem auto;
-            font-size: 1.1rem;
             line-height: 1.6;
+            color: #ccc;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 2rem auto;
-            max-width: 800px;
-        }
-        ul li::before {
-            content: "🛠️ ";
-        }
-        ul li {
-            text-align: left;
-            margin-bottom: 0.5rem;
-        }
-        .gallery {
+        .features {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            gap: 1rem;
-            margin: 3rem auto;
-            max-width: 1000px;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            padding: 2rem;
         }
-        .gallery img {
-            width: 100%;
-            max-width: 220px;
+        .feature-card {
+            background-color: #1a1a1a;
             border-radius: 12px;
-            border: 2px solid #C2542A40;
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+        .feature-card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+        }
+        .feature-card h3 {
+            color: #f2a15a;
+            margin: 1rem 0 0.5rem;
         }
         .discord-link {
             display: inline-block;
-            margin-top: 2rem;
+            margin: 2rem auto;
             padding: 1rem 2rem;
             background-color: #2B1D1890;
-            border: none;
-            border-radius: 12px;
+            color: white;
+            border-radius: 10px;
             font-size: 1.2rem;
-            color: #fff;
             text-decoration: none;
-            transition: background-color 0.3s;
         }
         .discord-link:hover {
             background-color: #C2542A;
         }
-        nav {
-            margin-top: 1rem;
-        }
-        nav a {
-            margin: 0 1rem;
-            color: #C2542A;
-            text-decoration: none;
-        }
         footer {
-            margin-top: 3rem;
-            font-size: 0.9rem;
-            color: #aaa;
+            text-align: center;
+            color: #888;
+            padding: 2rem;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <img src="logo.png" alt="Lost Souls Logo">
-        <h1>Lost Souls</h1>
-        <p>
-            Willkommen bei <strong>Lost Souls</strong> – einem düsteren FiveM-Server in einer Welt nach dem Zusammenbruch.
-            Kämpfe ums Überleben, finde Verbündete, trotze der Bedrohung durch Zombies und anderen Überlebenden.
-        </p>
-    </header>
-
+<header>
+    <img src="logo.png" alt="Lost Souls Logo">
     <nav>
-        <a href="regeln.html">📜 Serverregeln</a>
+        <a href="#">Home</a>
+        <a href="regeln.html">Regeln</a>
+        <a href="#">Features</a>
+        <a href="#">Screenshots</a>
     </nav>
+</header>
 
-    <h2>Wichtige Features</h2>
-    <ul>
-        <li>Dynamisches Wettersystem & Blackouts</li>
-        <li>Individuelle Quests und tiefgehende Lore</li>
-        <li>Crafting, Looten, Überleben</li>
-        <li>Zonensystem mit Gefahrenleveln</li>
-        <li>Postapokalyptische Fraktionen & Konflikte</li>
-    </ul>
+<section class="hero">
+    <h1>Willkommen bei Lost Souls</h1>
+    <p>
+        Lost Souls ist ein düsterer FiveM-Server in einer apokalyptischen Welt voller Gefahren, Entscheidungen und Überlebenswillen.
+        Tritt ein in eine Welt, in der Zombies nicht deine einzige Bedrohung sind.
+    </p>
+</section>
 
-    <h2>Einblicke</h2>
-    <div class="gallery">
+<section class="features">
+    <div class="feature-card">
         <img src="img1.webp" alt="Screenshot 1">
-        <img src="img2.webp" alt="Screenshot 2">
-        <img src="img3.webp" alt="Screenshot 3">
-        <img src="img4.webp" alt="Screenshot 4">
+        <h3>Fraktionssystem</h3>
     </div>
+    <div class="feature-card">
+        <img src="img2.webp" alt="Screenshot 2">
+        <h3>Zombie-Horden</h3>
+    </div>
+    <div class="feature-card">
+        <img src="img3.webp" alt="Screenshot 3">
+        <h3>Quests & Lore</h3>
+    </div>
+    <div class="feature-card">
+        <img src="img4.webp" alt="Screenshot 4">
+        <h3>Crafting & Survival</h3>
+    </div>
+</section>
 
-    <a class="discord-link" href="https://discord.gg/deinEinladungslink" target="_blank">🔗 Tritt unserer Community auf Discord bei</a>
+<div style="text-align: center;">
+    <a class="discord-link" href="https://discord.gg/deinEinladungslink" target="_blank">🔗 Tritt dem Lost Souls Discord bei</a>
+</div>
 
-    <footer>
-        &copy; 2025 Lost Souls RP – Alle Rechte vorbehalten.
-    </footer>
+<footer>
+    &copy; 2025 Lost Souls RP – Alle Rechte vorbehalten.
+</footer>
 
 </body>
 </html>
