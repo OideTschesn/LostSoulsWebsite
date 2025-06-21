@@ -10,28 +10,49 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(to bottom, #1a0f0a, #5c3926);
             color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             text-align: center;
-            min-height: 100vh;
             padding: 2rem;
-        }
-        header {
-            margin-bottom: 2rem;
         }
         h1 {
             color: #C2542A;
             font-size: 3rem;
-            margin: 0;
+            margin-bottom: 1rem;
         }
-        p.description {
+        p {
             max-width: 800px;
-            margin-top: 1rem;
-            font-size: 1.2rem;
+            margin: 1rem auto;
+            font-size: 1.1rem;
             line-height: 1.6;
         }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+        ul li::before {
+            content: "🛠️ ";
+        }
+        ul li {
+            text-align: left;
+            margin-bottom: 0.5rem;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin: 3rem auto;
+            max-width: 1000px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 220px;
+            border-radius: 12px;
+            border: 2px solid #C2542A40;
+        }
         .discord-link {
+            display: inline-block;
             margin-top: 3rem;
             padding: 1rem 2rem;
             background-color: #2B1D1890;
@@ -46,26 +67,42 @@
             background-color: #C2542A;
         }
         footer {
-            margin-top: auto;
+            margin-top: 3rem;
             font-size: 0.9rem;
             color: #aaa;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Lost Souls</h1>
-        <p class="description">
-            Willkommen bei <strong>Lost Souls</strong> – deinem FiveM-Server in einer zerstörten Welt. Hier kämpfst du ums Überleben,
-            suchst nach Ressourcen, trotzt dem Wahnsinn – und den Untoten. Unser Server bietet immersive Lore, gefährliche Zonen,
-            individuelle Quests und eine düstere Atmosphäre.
-        </p>
-    </header>
+
+    <h1>Lost Souls</h1>
+    <p>
+        Willkommen bei <strong>Lost Souls</strong> – einem düsteren FiveM-Server in einer Welt nach dem Zusammenbruch.  
+        Kämpfe ums Überleben, finde Verbündete, trotze der Bedrohung durch Zombies und andere Überlebende.
+    </p>
+
+    <h2>Wichtige Features</h2>
+    <ul>
+        <li>Dynamisches Wettersystem & Blackouts</li>
+        <li>Individuelle Quests und tiefgehende Lore</li>
+        <li>Crafting, Looten, Überleben</li>
+        <li>Zonensystem mit Gefahrenleveln</li>
+        <li>Postapokalyptische Fraktionen & Konflikte</li>
+    </ul>
+
+    <h2>Einblicke</h2>
+    <div class="gallery">
+        <img src="img1.webp" alt="Screenshot 1">
+        <img src="img2.webp" alt="Screenshot 2">
+        <img src="img3.webp" alt="Screenshot 3">
+        <img src="img4.webp" alt="Screenshot 4">
+    </div>
 
     <a class="discord-link" href="https://discord.gg/deinEinladungslink" target="_blank">🔗 Tritt unserer Community auf Discord bei</a>
 
     <footer>
-        &copy; 2025 Lost Souls RP - Alle Rechte vorbehalten.
+        &copy; 2025 Lost Souls RP – Alle Rechte vorbehalten.
     </footer>
+
 </body>
 </html>
